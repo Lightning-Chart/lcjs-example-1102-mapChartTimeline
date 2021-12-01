@@ -78,13 +78,13 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/dashboard.html
-[Map chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/mapchart.html
-[Map types]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#maptypes
-[Color look up table]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/lut.html
-[Paletted fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/classes/palettedfill.html
-[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#colorrgba
-[UI element builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#uielementbuilders
-[UI layout builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#uilayoutbuilders
-[Legend box builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.1.0/globals.html#legendboxbuilders
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/dashboard.html
+[Map chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/mapchart.html
+[Map types]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#maptypes
+[Color look up table]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lut.html
+[Paletted fill style]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/palettedfill.html
+[Color factory RGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#colorrgba
+[UI element builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uielementbuilders
+[UI layout builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#uilayoutbuilders
+[Legend box builders]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#legendboxbuilders
 
