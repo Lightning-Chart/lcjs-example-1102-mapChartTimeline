@@ -193,7 +193,7 @@ let interval;
 // Fetch data set used in example.
 fetch(
   document.head.baseURI +
-    "examples/assets/lcjs_example_1102_mapChartTimeline-population60-21.json"
+    "examples/assets/1102/population60-21.json"
 )
   .then((r) => r.json())
   .then((populationData) => {
