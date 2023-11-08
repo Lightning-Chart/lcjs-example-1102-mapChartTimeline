@@ -50,6 +50,8 @@ chartNA.invalidateRegionValues(regionValuesData)
 -   [LightningChart JS Map Charts with Drill-down](https://lightningchart.com/lightningchart-js-interactive-examples/examples/lcjs-example-1111-covidDrillDownDashboard.html)
 -   [Data visualization over static map picture](https://lightningchart.com/lightningchart-js-interactive-examples/examples/lcjs-example-1110-geoChartUsaTemperature.html)
 
+**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/**
+
 
 ## API Links
 
@@ -85,13 +87,13 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/Dashboard.html
-[Map chart]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/MapChart.html
-[Map types]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/MapTypes.html
-[Color look up table]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/LUT.html
-[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/PalettedFill.html
-[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/functions/ColorRGBA.html
-[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/UIElementBuilders.html
-[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/UILayoutBuilders.html
-[Legend box builders]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/LegendBoxBuilders.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/Dashboard.html
+[Map chart]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/MapChart.html
+[Map types]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/variables/MapTypes.html
+[Color look up table]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/LUT.html
+[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/PalettedFill.html
+[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/functions/ColorRGBA.html
+[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/variables/UIElementBuilders.html
+[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/variables/UILayoutBuilders.html
+[Legend box builders]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/variables/LegendBoxBuilders.html
 

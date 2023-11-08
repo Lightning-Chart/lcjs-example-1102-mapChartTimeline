@@ -21,6 +21,7 @@ const {
 } = lcjs
 
 // Create Dashboard and Charts.
+// NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
 const dashboard = lightningChart().Dashboard({
     // theme: Themes.darkGold
     numberOfColumns: 3,
