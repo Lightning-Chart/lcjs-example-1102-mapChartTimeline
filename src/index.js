@@ -165,7 +165,7 @@ let yearAnimationActive = true
 let interval
 
 // Fetch data set used in example.
-fetch(document.head.baseURI + 'examples/assets/1102/population60-21.json')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1102/population60-21.json')
     .then((r) => r.json())
     .then((populationData) => {
         // stop timeline, change the year  and change bg color of slider by clicking on slider
