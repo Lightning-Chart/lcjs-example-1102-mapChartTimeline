@@ -2,7 +2,7 @@
  * LightningChart JS Example on using `MapChart` with real-time animated data set and dynamic region coloring.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const {
@@ -54,17 +54,9 @@ const palette = new PalettedFill({
         interpolate: true,
         // This property is used to specify fallback color for regions which have no data.
         color: ColorRGBA(255, 255, 255),
+        units: 'Δ% / year'
     }),
 })
-
-// Specify cursor result table formatter for all map charts.
-const cursorResultTableFormatter = (builder, region, value, longitude, latitude) => {
-    builder.addRow('', region.name, '').addRow('', `Population change ${currentYear}`, '')
-    if (value) {
-        builder.addRow('', `${value > 0 ? '+' : ''}${value.toFixed(2)} %`, '')
-    }
-    return builder
-}
 
 // North America region
 const chartNA = dashboard
@@ -76,7 +68,6 @@ const chartNA = dashboard
     })
     .setTitle('North America')
     .setFillStyle(palette)
-    .setCursorResultTableFormatter(cursorResultTableFormatter)
 
 // South America region
 const chartSA = dashboard
@@ -88,7 +79,6 @@ const chartSA = dashboard
     })
     .setTitle('South America')
     .setFillStyle(palette)
-    .setCursorResultTableFormatter(cursorResultTableFormatter)
 
 // Europe region
 const chartEurope = dashboard
@@ -101,7 +91,6 @@ const chartEurope = dashboard
     })
     .setTitle('Europe')
     .setFillStyle(palette)
-    .setCursorResultTableFormatter(cursorResultTableFormatter)
 
 // Create UI panel inside Dashboard for placing legend and some extra controls.
 const panel = dashboard.createUIPanel({
