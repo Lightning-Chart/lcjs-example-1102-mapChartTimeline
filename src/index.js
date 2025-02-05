@@ -54,7 +54,7 @@ const palette = new PalettedFill({
         interpolate: true,
         // This property is used to specify fallback color for regions which have no data.
         color: ColorRGBA(255, 255, 255),
-        units: 'Δ% / year'
+        units: 'Δ% / year',
     }),
 })
 
@@ -100,12 +100,12 @@ const panel = dashboard.createUIPanel({
     rowSpan: 1,
 })
 
-panel.onResize((chart, width, height, engineWidth, engineHeight) => {
-    block.style.width = width + 'px'
-    block.style.left = engineWidth - width + 'px'
+panel.addEventListener('resize', (event) => {
+    block.style.width = event.width + 'px'
+    block.style.left = event.engineWidth - event.width + 'px'
 })
-chartEurope.onResize((chart, width, height, engineWidth, engineHeight) => {
-    block.style.top = engineHeight - height - 82 + 'px'
+chartEurope.addEventListener('resize', (event) => {
+    block.style.top = event.engineHeight - event.height - 82 + 'px'
 })
 
 // NOTE: Custom Legend Box is created with UI elements.
@@ -117,7 +117,7 @@ const legendLayout = panel
     })
     .setOrigin(UIOrigins.LeftBottom)
     .setMargin(6)
-    .setMouseInteractions(false)
+    .setPointerEvents(false)
     .setBackground((bg) => bg.setFillStyle(emptyFill).setStrokeStyle(emptyLine))
 
 const legendTitle = legendLayout.addElement(UIElementBuilders.TextBox).setText('Population change (% / year)')
