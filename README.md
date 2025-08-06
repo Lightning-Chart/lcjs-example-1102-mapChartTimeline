@@ -63,7 +63,6 @@ chartNA.invalidateRegionValues(regionValuesData)
 * [Color factory RGBA]
 * [UI element builders]
 * [UI layout builders]
-* [Legend box builders]
 
 
 ## Support
@@ -87,13 +86,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Dashboard.html
-[Map chart]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/MapChart.html
-[Map types]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/MapTypes.html
-[Color look up table]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/LUT.html
-[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/PalettedFill.html
-[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/functions/ColorRGBA.html
-[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/UIElementBuilders.html
-[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/UILayoutBuilders.html
-[Legend box builders]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/LegendBoxBuilders.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/Dashboard.html
+[Map chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/MapChart.html
+[Map types]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/MapTypes.html
+[Color look up table]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/LUT.html
+[Paletted fill style]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/classes/PalettedFill.html
+[Color factory RGBA]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/functions/ColorRGBA.html
+[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UIElementBuilders.html
+[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.0/variables/UILayoutBuilders.html
 

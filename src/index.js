@@ -11,12 +11,7 @@ const {
     PalettedFill,
     LUT,
     ColorRGBA,
-    emptyFill,
-    emptyLine,
-    UIOrigins,
-    LegendBoxBuilders,
-    UIElementBuilders,
-    UILayoutBuilders,
+    LegendPosition,
     Themes,
 } = lcjs
 
@@ -61,6 +56,7 @@ const palette = new PalettedFill({
 // North America region
 const chartNA = dashboard
     .createMapChart({
+        legend: { visible: false },
         type: MapTypes.NorthAmerica,
         columnIndex: 0,
         rowIndex: 0,
@@ -72,6 +68,7 @@ const chartNA = dashboard
 // South America region
 const chartSA = dashboard
     .createMapChart({
+        legend: { visible: false },
         type: MapTypes.SouthAmerica,
         columnIndex: 1,
         rowIndex: 0,
@@ -83,6 +80,7 @@ const chartSA = dashboard
 // Europe region
 const chartEurope = dashboard
     .createMapChart({
+        legend: { visible: false },
         type: MapTypes.Europe,
         columnIndex: 0,
         rowIndex: 1,
@@ -93,12 +91,22 @@ const chartEurope = dashboard
     .setFillStyle(palette)
 
 // Create UI panel inside Dashboard for placing legend and some extra controls.
-const panel = dashboard.createUIPanel({
+const panel = dashboard.createLegendPanel({
     columnIndex: 2,
     rowIndex: 0,
     columnSpan: 1,
     rowSpan: 1,
 })
+
+panel.legend
+    .setOptions({
+        position: LegendPosition.TopLeft,
+        autoHideThreshold: 0,
+        title: 'Population change (% / year)',
+    })
+    .add(chartNA, { text: 'North America' })
+    .add(chartSA, { text: 'South America' })
+    .add(chartEurope, { text: 'Europe' })
 
 panel.addEventListener('resize', (event) => {
     block.style.width = event.width + 'px'
@@ -107,28 +115,6 @@ panel.addEventListener('resize', (event) => {
 chartEurope.addEventListener('resize', (event) => {
     block.style.top = event.engineHeight - event.height - 82 + 'px'
 })
-
-// NOTE: Custom Legend Box is created with UI elements.
-const legendLayout = panel
-    .addUIElement(UILayoutBuilders.Column)
-    .setPosition({
-        x: 0,
-        y: 20,
-    })
-    .setOrigin(UIOrigins.LeftBottom)
-    .setMargin(6)
-    .setPointerEvents(false)
-    .setBackground((bg) => bg.setFillStyle(emptyFill).setStrokeStyle(emptyLine))
-
-const legendTitle = legendLayout.addElement(UIElementBuilders.TextBox).setText('Population change (% / year)')
-
-const legendBuilder = LegendBoxBuilders.HorizontalLegendBox.addStyler((legendBox) =>
-    legendBox.setBackground((background) => background.setFillStyle(emptyFill).setStrokeStyle(emptyLine)).setTitle(''),
-)
-
-const legendNA = legendLayout.addElement(legendBuilder).add(chartNA)
-const legendSA = legendLayout.addElement(legendBuilder).add(chartSA)
-const legendEurope = legendLayout.addElement(legendBuilder).add(chartEurope)
 
 // Add dynamically injected HTML elements for active Year slider.
 const yearDiv = document.createElement('div')
